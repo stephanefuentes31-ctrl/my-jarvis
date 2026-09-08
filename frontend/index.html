@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020a15" />
+    <title>J.A.R.V.I.S. | Intelligent System</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="JARVIS home"><span class="arc-logo">◆</span><span><strong>J.A.R.V.I.S.</strong><small>Just A Rather Very Intelligent System</small></span></a>
+        <section class="mission"><span>PROJECT: <b>NEW PROJECT</b></span><small>PLAN&nbsp;&nbsp;/&nbsp;&nbsp; BUILD&nbsp;&nbsp;/&nbsp;&nbsp; ACHIEVE</small></section>
+        <section class="clock"><small id="date">SYSTEM DATE</small><strong id="time">00:00</strong><small>LOCAL TIME</small></section>
+      </header>
+
+      <section class="workspace">
+        <aside class="left-panel">
+          <section class="panel system-card"><p class="eyebrow">◉ &nbsp; SYSTEM ONLINE</p><h1 id="status">J.A.R.V.I.S. is ready.</h1><p>How can I help with your new project?</p></section>
+          <section class="panel overview"><p class="eyebrow">▣ &nbsp; PROJECT OVERVIEW</p><dl><dt>Project Name</dt><dd>New Project</dd><dt>Status</dt><dd>In Progress</dd><dt>Priority</dt><dd>High</dd><dt>Start Date</dt><dd>Today</dd></dl><div class="progress-label"><span>Overall Progress</span><b>23%</b></div><div class="progress"><i></i></div></section>
+          <section class="panel tasks"><p class="eyebrow">☑ &nbsp; TODAY'S TASKS <span>3/7</span></p><ul><li class="done">Finalize project plan</li><li class="done">Research and gather resources</li><li>Design / develop initial build</li><li>Test and troubleshoot</li><li>Update documentation</li><li>Review progress</li><li>Prepare next steps</li></ul></section>
+        </aside>
+
+        <section class="core" aria-live="polite">
+          <div class="orb" aria-hidden="true"><div class="orb-inner"><span>J.A.R.V.I.S.</span><small>YOUR PROJECT ASSISTANT</small></div></div>
+          <div class="transcript" id="transcript"><p class="assistant-message">Systems initialized. I am ready when you are.</p></div>
+          <button class="voice-control" id="mic" type="button" aria-label="Start voice input"><span class="wave">▮▯▮▯▮</span><span id="voice-label">Speak to J.A.R.V.I.S.</span><b>◉</b></button>
+          <p class="motto">“Always forward.”<br /><small>— J.A.R.V.I.S.</small></p>
+        </section>
+
+        <aside class="right-panel">
+          <section class="panel quick"><p class="eyebrow">ϟ &nbsp; QUICK ACCESS</p><button>▣ <span>Project Files<small>Open, view, manage files</small></span>›</button><button>▣ <span>Calendar<small>Meetings, deadlines, reminders</small></span>›</button><button>▣ <span>Notes<small>Ideas, plans, updates</small></span>›</button><button>⌕ <span>Web Search<small>Find information, resources</small></span>›</button><button>⚙ <span>Settings<small>Customize J.A.R.V.I.S.</small></span>›</button></section>
+          <section class="panel analytics"><p class="eyebrow">▥ &nbsp; SYSTEM ANALYTICS</p><div class="meters"><div><i style="--value:78"></i><b>78%</b><small>CPU Usage</small></div><div><i style="--value:62"></i><b>62%</b><small>Memory</small></div><div><i style="--value:94"></i><b>94%</b><small>Disk Usage</small></div></div><small>Project Activity</small><div class="bars" aria-label="Project activity chart"></div></section>
+        </aside>
+      </section>
+      <form class="composer" id="chat-form"><input id="prompt" autocomplete="off" maxlength="8000" placeholder="Ask J.A.R.V.I.S..." aria-label="Message JARVIS" /><button aria-label="Send message" type="submit">➤</button></form>
+      <footer>J.A.R.V.I.S. &nbsp; v1.0 <span>FOCUS &nbsp;/&nbsp; EFFICIENCY &nbsp;/&nbsp; SUCCESS</span></footer>
+    </main>
+    <script src="/assets/app.js"></script>
+  </body>
+</html>
